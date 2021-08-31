@@ -1,11 +1,8 @@
 <resources>
-    <string name="app_name">Lab01</string>
-    <string name="increment_str">Increment</string>
-    <string name="greeting_str">Get 41</string>
-    <string name="decrement_str">Decrement</string>
-    <string name="restart_str">Back to 0</string>
-    <string name="times_2">   x 2   </string>
-    <string name="numbers_here"></string>
+    <string name="app_name">Lab02</string>
+    <string name="king_julien">King Julien</string>
+    <string name="maurice">Maurice</string>
+    <string name="mort">Mort</string>
 
 
 </resources>

@@ -7,66 +7,49 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/greeting_textview"
+        android:id="@+id/image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/numbers_here"
+        android:text=""
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/greeting_text"
+        app:layout_constraintLeft_LeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:id="@+id/greeting_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/greeting_str"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/greeting_textview"
-        app:layout_constraintTop_toTopOf="parent" />
-    <Button
-        android:id="@+id/increment_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/greeting_textview"
-        app:layout_constraintLeft_toRightOf="@id/decrement_button"
-        app:layout_constraintRight_toRightOf="parent"
-        android:text="@string/increment_str"
-        />
-    <Button
-        android:id="@+id/decrement_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="decrement"
-        app:layout_constraintTop_toBottomOf="@id/greeting_textview"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/increment_button"
-        android:text="@string/decrement_str"
-        />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451" />
+
 
     <Button
-        android:id="@+id/restart_button"
+        android:id="@+id/king_julien"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:onClick="restart"
-        android:text="@string/restart_str"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:onClick="kingJulienSpeak"
+        app:layout_constraintTop_toBottomOf="@id/image"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/times_2"
-        app:layout_constraintTop_toBottomOf="@id/increment_button" />
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/king_julien"
+        />
     <Button
-        android:id="@+id/times_2"
+        android:id="@+id/maurice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:onClick="times_2"
-        android:text="@string/times_2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toRightOf="@id/restart_button"
+        android:onClick="kingJulienSpeak"
+        app:layout_constraintTop_toBottomOf="@id/king_julien"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/increment_button" />
+        android:text="@string/maurice"
+        />
+    <Button
+        android:id="@+id/mort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="kingJulienSpeak"
+        app:layout_constraintTop_toBottomOf="@id/maurice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/mort"
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
